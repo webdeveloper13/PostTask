@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>home</title>
+<link href="mystyle.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript">
+function checkAuth(){
+var uname,pwd;
+uname=document.getElementById("uname");
+pwd=document.getElementById("pwd");
+if(uname.value!="abc"&&pwd.value!="abc")
+{
+alert("Please provide valid username and password..!");
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<table width="100%">
+<tr>
+<td>
+<center>
+<img src="hacker-1.jpg" height="250px" width="450px"/>
+</td>
+</tr>
+<tr>
+<table class="menu">
+<tr>
+<td><a id="home" href="home.html">Home</a></td>
+<td><a href="services.html">Services</a></td>
+<td><a href="contactus.html">Contact us</a></td>
+<td><a href="aboutus.html">About us</a></td>
+</tr>
+</table>
+</center>
+</tr>
+<tr>
+<center>
+<p>LOGIN</p>
+
+<form id="frmLog" action="reg.html" method="post" onsubmit="return checkAuth()">
+<table>
+<tr>
+<td>UserName;
+</td>
+<td><input id="uname" name="uname" required="true" type="text"/>
+</td>
+</tr>
+<tr>
+<td>Password:
+</td>
+<td><input id="pwd" name="pwd" required="true" type="password"/>
+</td>
+</tr>
+<tr>
+<td colspan="2" align=center>
+<input id="sub" name="sub" type="submit" value="submit"/>
+</td>
+</tr>
+</table>
+</form>
+</tr>
+</table>
+</body>
+</html>
