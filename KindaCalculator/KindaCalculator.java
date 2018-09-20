@@ -14,7 +14,7 @@ TextField tf1,tf2,tf3;
 Button b1,b2;
 
 public void init(){
-//create components
+
 l1=new Label("First Number");
 tf1=new TextField(20);
 l2=new Label("Second Number");
@@ -25,7 +25,7 @@ tf3=new TextField(20);
 tf3.setEditable(false);
 b1.addActionListener(this);
 b2.addActionListener(this);
-//add components in the order
+
 
 add(l1);
 add(tf1);
@@ -34,7 +34,7 @@ add(tf2);
 add(b1);
 add(b2);
 add(tf3);
-}//end of init
+}
 
 public void actionPerformed(ActionEvent evt){
 int a,b,c=0;
